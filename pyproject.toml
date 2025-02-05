@@ -1,0 +1,25 @@
+[project]
+name = "ml-showcase"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Soňa Vargová", email = "so.vargova@gmail.com"},
+]
+dependencies = ["streamlit>=1.42.0", "numpy>=2.0.2", "tensorflow>=2.18.0", "pillow>=11.1.0"]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "GNU"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.build]
+packages = [
+    { include = "my_app", from = "src" }
+]
+
+[build-system]
+requires = ["pdm-backend", "setuptools", "wheel"]
+build-backend = "pdm.backend"
+
