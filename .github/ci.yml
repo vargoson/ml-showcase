@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install PDM
+        run: pip install pdm
+
+      - name: Install Dependencies
+        run: pdm install
+
+      - name: Export Requirements
+        run: pdm export -f requirements > requirements.txt
+
+      # You can add additional steps here for testing or deployment
+     # - name: Run Tests
+     #   run: pdm run pytest
+
+     # - name: Deploy
+     #   run: |
+     #     # Your deployment command here, which might use the generated requirements.txt
+     #     echo "Deploying the app..."
