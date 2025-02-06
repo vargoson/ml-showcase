@@ -28,7 +28,8 @@ jobs:
         run: pdm install
 
       - name: Export Requirements
-        run: pdm export -f requirements > requirements.txt
+        run: pdm export -f requirements -o requirements.txt
+
 
      # - name: Run Tests
      #   run: pdm run pytest
