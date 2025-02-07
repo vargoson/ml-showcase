@@ -8,13 +8,12 @@ from my_app.webpages.home import home
 from my_app.webpages.image_classifier import image_classifier
 from my_app.webpages.about import about
 from my_app.webpages.settings import settings
+from my_app.webpages.chest_xray_classifier import chest_xray_classifier
 
 def main():
-    # Apply custom CSS
     set_custom_css()
 
-    # Sidebar Menu Navigation
-    menu = st.sidebar.radio("Navigation", ["Home", "Image Classifier", "About", "Settings"])
+    menu = st.sidebar.radio("Navigation", ["Home", "Image Classifier", "About", "Settings", "Chest X Ray Classifier"])
 
     if menu == "Home":
         home()
@@ -24,6 +23,8 @@ def main():
         about()
     elif menu == "Settings":
         settings()
+    elif menu == "Chest X Ray Classifier":
+        chest_xray_classifier()
 
 if __name__ == '__main__':
     main()
