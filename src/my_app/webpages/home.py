@@ -5,12 +5,12 @@ from my_app.utils.path_util import get_asset_path
 # from PIL import Image
 
 def home():
-    st.title("ML Project Showcase")
-    st.subheader("Welcome to the Next-Generation ML Showcase!")
+    st.title("ML Showcase")
+    st.subheader("Welcome to my Machine Learning portfolio!")
     st.write(
         """
-        Explore our interactive machine learning projects with a sleek UI.
-        Use the sidebar to navigate to our Image Classifier, learn about the project,
+        Explore interactive machine learning projects with a sleek UI.
+        Use the sidebar to navigate to various projects, learn about them,
         or customize your settings.
         """
     )

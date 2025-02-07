@@ -4,12 +4,12 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 import time
-from my_app.utils.model_loader import load_model
+from my_app.utils.model_loader import load_model_mn
 
 
 def image_classifier():
     st.title("Image Classifier")
-    st.write("Upload an image, and our ML model (MobileNetV2) will classify it in real-time!")
+    st.write("Upload an image, and a pre-trained MobileNet model will classify it in real-time.")
     
     uploaded_file = st.file_uploader("Choose an image file (JPG, JPEG, PNG)", type=["jpg", "jpeg", "png"])
     
@@ -33,7 +33,7 @@ def image_classifier():
                 image_array = tf.keras.applications.mobilenet_v2.preprocess_input(image_array)
                 
                 # Predict and decode the results
-                model = load_model()
+                model = load_model_mn()
                 preds = model.predict(image_array)
                 results = tf.keras.applications.mobilenet_v2.decode_predictions(preds, top=3)[0]
                 
