@@ -8,15 +8,15 @@ def about():
     st.title("About This Project")
     st.write(
         """
-        **ML Project Showcase** is an interactive web application built with Streamlit.
-        It demonstrates machine learning projects in a user-friendly interface with a modern design.
+        **ML Showcase** is an interactive web application built with Streamlit.
+        It demonstrates machine learning projects I have undertaken in an interactive and user-friendly manner, featuring Real-time predictions. 
         
         **Features include:**
         - A custom sidebar menu for easy navigation.
         - A slick UI with custom CSS styling.
         - Smart features such as a dark mode toggle and real-time ML model predictions.
         
-        Check out the source code on [GitHub](https://github.com/vargoson/ml-showcase).
+        If you like this page check out the source code on [GitHub](https://github.com/vargoson/ml-showcase).
         """
     )
     st.markdown("---")

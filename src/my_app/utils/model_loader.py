@@ -3,6 +3,7 @@ import streamlit as st
 import tensorflow as tf
 
 @st.cache_resource
-def load_model():
+def load_model_mn():
     import tensorflow as tf
     return tf.keras.applications.MobileNetV2(weights='imagenet')
+
