@@ -41,25 +41,25 @@ pdm run streamlit run src/my_app/main.py
 ml-showcase/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml             # CI/CD configuration for GitHub Actions
-├── webpages/                  # Static files (e.g., assets, images)
+│       └── ci.yml                     # CI/CD configuration for GitHub Actions
+├── webpages/                          # Static files (e.g., assets, images)
 │   └── assets/
-│       └── ML.png             # Example image asset
-├── pyproject.toml             # PDM project configuration
-├── pdm.lock                   # PDM lock file
+│       └── ML.png                     # Example image asset
+├── pyproject.toml                     # PDM project configuration
+├── pdm.lock                           # PDM lock file
 └── src/
     └── my_app/
         ├── __init__.py
-        ├── main.py            # Main entry point with custom navigation
+        ├── main.py                    # Main entry point with custom navigation
         ├── utils/
         │   ├── __init__.py
-        │   └── path_util.py   # Utility for constructing asset paths
+        │   └── path_util.py           # Utility for constructing asset paths
         └── webpages/
             ├── __init__.py
-            ├── home.py        # Home page content
-            ├── image_classifier.py  # Image classification page
-            ├── about.py       # About page
-            └── settings.py    # Settings page (e.g., dark mode toggle)
+            ├── home.py                # Home page content
+            ├── image_classifier.py    # Image classification page
+            ├── about.py               # About page
+            └── settings.py            # Settings page (e.g., dark mode toggle)
 
 ```
 
