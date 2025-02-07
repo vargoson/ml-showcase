@@ -10,8 +10,6 @@ def home():
     st.write(
         """
         Explore interactive machine learning projects with a sleek UI.
-        Use the sidebar to navigate to various projects, learn about them,
-        or customize your settings.
         """
     )
 

@@ -21,7 +21,6 @@ def image_classifier():
             with st.spinner("Processing and classifying the image..."):
                 time.sleep(1) 
                 
-                # Resize and preprocess image
                 target_size = (224, 224)
                 image = image.resize(target_size)
                 image_array = np.array(image)

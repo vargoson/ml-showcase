@@ -44,9 +44,15 @@ click==8.1.8 \
 colorama==0.4.6; platform_system == "Windows" \
     --hash=sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44 \
     --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
+filelock==3.17.0 \
+    --hash=sha256:533dc2f7ba78dc2f0f531fc6c4940addf7b70a481e269a5a3b93be94ffbe8338 \
+    --hash=sha256:ee4e77401ef576ebb38cd7f13b9b28893194acc20a8e68e18730ba9c0e54660e
 flatbuffers==25.1.24 \
     --hash=sha256:1abfebaf4083117225d0723087ea909896a34e3fec933beedb490d595ba24145 \
     --hash=sha256:e0f7b7d806c0abdf166275492663130af40c11f89445045fbef0aa3c9a8643ad
+fsspec==2025.2.0 \
+    --hash=sha256:1c24b16eaa0a1798afa0337aa0db9b256718ab2a89c425371f5628d22c3b6afd \
+    --hash=sha256:9de2ad9ce1f85e1931858535bc882543171d197001a0a5eb2ddc04f1781ab95b
 gast==0.6.0 \
     --hash=sha256:52b182313f7330389f72b069ba00f174cfe2a06411099547288839c6cbafbd54 \
     --hash=sha256:88fc5300d32c7ac6ca7b515310862f71e6fdf2c029bbec7c66c0f5dd47b6b1fb
@@ -130,12 +136,18 @@ ml-dtypes==0.4.1 \
     --hash=sha256:74c6cfb5cf78535b103fde9ea3ded8e9f16f75bc07789054edc7776abfb3d752 \
     --hash=sha256:e138a9b7a48079c900ea969341a5754019a1ad17ae27ee330f7ebf43f23877f9 \
     --hash=sha256:fad5f2de464fd09127e49b7fd1252b9006fb43d2edc1ff112d390c324af5ca7a
+mpmath==1.3.0; python_version >= "3.9" \
+    --hash=sha256:7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f \
+    --hash=sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c
 namex==0.0.8 \
     --hash=sha256:32a50f6c565c0bb10aa76298c959507abdc0e850efe085dc38f3440fcb3aa90b \
     --hash=sha256:7ddb6c2bb0e753a311b7590f84f6da659dd0c05e65cb89d519d54c0a250c0487
 narwhals==1.25.1 \
     --hash=sha256:9c0e27be46e186526878286b442a3dd2ee9fe723456457feff42316288732b96 \
     --hash=sha256:a1838f2725523da54c093849e93a8b2a57d2310f0bbc26be35d223f5eef60417
+networkx==3.4.2 \
+    --hash=sha256:307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1 \
+    --hash=sha256:df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f
 numpy==2.0.2 \
     --hash=sha256:11a76c372d1d37437857280aa142086476136a8c0f373b2e648ab2c8f18fb195 \
     --hash=sha256:13e689d772146140a252c3a28501da66dfecd77490b498b168b501835041f951 \
@@ -148,6 +160,55 @@ numpy==2.0.2 \
     --hash=sha256:a15f476a45e6e5a3a79d8a14e62161d27ad897381fecfa4a09ed5322f2085669 \
     --hash=sha256:a392a68bd329eafac5817e5aefeb39038c48b671afd242710b451e76090e81f4 \
     --hash=sha256:c1c9307701fec8f3f7a1e6711f9089c06e6284b3afbbcd259f7791282d660a15
+nvidia-cublas-cu12==12.4.5.8; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:0f8aa1706812e00b9f19dfe0cdb3999b092ccb8ca168c0db5b8ea712456fd9b3 \
+    --hash=sha256:2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b \
+    --hash=sha256:5a796786da89203a0657eda402bcdcec6180254a8ac22d72213abc42069522dc
+nvidia-cuda-cupti-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:5688d203301ab051449a2b1cb6690fbe90d2b372f411521c86018b950f3d7922 \
+    --hash=sha256:79279b35cf6f91da114182a5ce1864997fd52294a87a16179ce275773799458a \
+    --hash=sha256:9dec60f5ac126f7bb551c055072b69d85392b13311fcc1bcda2202d172df30fb
+nvidia-cuda-nvrtc-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:0eedf14185e04b76aa05b1fea04133e59f465b6f960c0cbf4e37c3cb6b0ea198 \
+    --hash=sha256:a178759ebb095827bd30ef56598ec182b85547f1508941a3d560eb7ea1fbf338 \
+    --hash=sha256:a961b2f1d5f17b14867c619ceb99ef6fcec12e46612711bcec78eb05068a60ec
+nvidia-cuda-runtime-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:09c2e35f48359752dfa822c09918211844a3d93c100a715d79b59591130c5e1e \
+    --hash=sha256:64403288fa2136ee8e467cdc9c9427e0434110899d07c779f25b5c068934faa5 \
+    --hash=sha256:961fe0e2e716a2a1d967aab7caee97512f71767f852f67432d572e36cb3a11f3
+nvidia-cudnn-cu12==9.1.0.70; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:165764f44ef8c61fcdfdfdbe769d687e06374059fbb388b6c89ecb0e28793a6f \
+    --hash=sha256:6278562929433d68365a07a4a1546c237ba2849852c0d4b2262a486e805b977a
+nvidia-cufft-cu12==11.2.1.3; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:5dad8008fc7f92f5ddfa2101430917ce2ffacd86824914c82e28990ad7f00399 \
+    --hash=sha256:d802f4954291101186078ccbe22fc285a902136f974d369540fd4a5333d1440b \
+    --hash=sha256:f083fc24912aa410be21fa16d157fed2055dab1cc4b6934a0e03cba69eb242b9
+nvidia-curand-cu12==10.3.5.147; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:1f173f09e3e3c76ab084aba0de819c49e56614feae5c12f69883f4ae9bb5fad9 \
+    --hash=sha256:a88f583d4e0bb643c49743469964103aa59f7f708d862c3ddb0fc07f851e3b8b \
+    --hash=sha256:f307cc191f96efe9e8f05a87096abc20d08845a841889ef78cb06924437f6771
+nvidia-cusolver-cu12==11.6.1.9; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:19e33fa442bcfd085b3086c4ebf7e8debc07cfe01e11513cc6d332fd918ac260 \
+    --hash=sha256:d338f155f174f90724bbde3758b7ac375a70ce8e706d70b018dd3375545fc84e \
+    --hash=sha256:e77314c9d7b694fcebc84f58989f3aa4fb4cb442f12ca1a9bde50f5e8f6d1b9c
+nvidia-cusparse-cu12==12.3.1.170; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:9bc90fb087bc7b4c15641521f31c0371e9a612fc2ba12c338d3ae032e6b6797f \
+    --hash=sha256:9d32f62896231ebe0480efd8a7f702e143c98cfaa0e8a76df3386c1ba2b54df3 \
+    --hash=sha256:ea4f11a2904e2a8dc4b1833cc1b5181cde564edd0d5cd33e3c168eff2d1863f1
+nvidia-cusparselt-cu12==0.6.2; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:0057c91d230703924c0422feabe4ce768841f9b4b44d28586b6f6d2eb86fbe70 \
+    --hash=sha256:067a7f6d03ea0d4841c85f0c6f1991c5dda98211f6302cb83a4ab234ee95bef8 \
+    --hash=sha256:df2c24502fd76ebafe7457dbc4716b2fec071aabaed4fb7691a201cde03704d9
+nvidia-nccl-cu12==2.21.5; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:8579076d30a8c24988834445f8d633c697d42397e92ffc3f63fa26766d25e0a0
+nvidia-nvjitlink-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:06b3b9b25bf3f8af351d664978ca26a16d2c5127dbd53c0497e28d1fb9611d57 \
+    --hash=sha256:4abe7fef64914ccfa909bc2ba39739670ecc9e820c83ccc7a6ed414122599b83 \
+    --hash=sha256:fd9020c501d27d135f983c6d3e244b197a7ccad769e34df53a42e276b0e25fa1
+nvidia-nvtx-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:641dccaaa1139f3ffb0d3164b4b84f9d253397e38246a4f2f36728b48566d485 \
+    --hash=sha256:781e950d9b9f60d8241ccea575b32f5105a5baf4c2351cab5256a24869f12a1a \
+    --hash=sha256:7959ad635db13edf4fc65c06a6e9f9e55fc2f92596db928d169c0bb031e88ef3
 opt-einsum==3.4.0 \
     --hash=sha256:69bb92469f86a1565195ece4ac0323943e83477171b91d24c35afe028a90d7cd \
     --hash=sha256:96ca72f1b886d148241348783498194c577fa30a8faac108586b14f1ba4473ac
@@ -253,6 +314,9 @@ smmap==5.0.2 \
 streamlit==1.42.0 \
     --hash=sha256:8c48494ccfad33e7d0bc5873151800b203cb71203bfd42bc7418940710ca4970 \
     --hash=sha256:edf333fd3525b7c64b19e1156b483a1a93cbdb09a3a06f26478388d68f971090
+sympy==1.13.1; python_version >= "3.9" \
+    --hash=sha256:9cebf7e04ff162015ce31c9c6c9144daa34a93bd082f54fd8f12deca4f47515f \
+    --hash=sha256:db36cdc64bf61b9b24578b6f7bab1ecdd2452cf008f34faa33776680c26d66f8
 tenacity==9.0.0 \
     --hash=sha256:807f37ca97d62aa361264d497b0e31e92b8027044942bfa756160d908320d73b \
     --hash=sha256:93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539
@@ -278,6 +342,16 @@ termcolor==2.5.0 \
 toml==0.10.2 \
     --hash=sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b \
     --hash=sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f
+torch==2.6.0 \
+    --hash=sha256:46763dcb051180ce1ed23d1891d9b1598e07d051ce4c9d14307029809c4d64f7 \
+    --hash=sha256:7979834102cd5b7a43cc64e87f2f3b14bd0e1458f06e9f88ffa386d07c7446e1 \
+    --hash=sha256:94fc63b3b4bedd327af588696559f68c264440e2503cc9e6954019473d74ae21 \
+    --hash=sha256:ccbd0320411fe1a3b3fec7b4d3185aa7d0c52adac94480ab024b5c8f74a0bf1d
+torchvision==0.21.0 \
+    --hash=sha256:110d115333524d60e9e474d53c7d20f096dbd8a080232f88dddb90566f90064c \
+    --hash=sha256:3891cd086c5071bda6b4ee9d266bb2ac39c998c045c2ebcd1e818b8316fb5d41 \
+    --hash=sha256:49bcfad8cfe2c27dee116c45d4f866d7974bcf14a5a9fbef893635deae322f2f \
+    --hash=sha256:54454923a50104c66a9ab6bd8b73a11c2fc218c964b1006d5d1fe5b442c3dcb6
 tornado==6.4.2 \
     --hash=sha256:072ce12ada169c5b00b7d92a99ba089447ccc993ea2143c9ede887e0937aa803 \
     --hash=sha256:1a017d239bd1bb0919f72af256a970624241f070496635784d9bf0db640d3fec \
@@ -290,6 +364,8 @@ tornado==6.4.2 \
     --hash=sha256:c36e62ce8f63409301537222faffcef7dfc5284f27eec227389f2ad11b09d946 \
     --hash=sha256:c82c46813ba483a385ab2a99caeaedf92585a1f90defb5693351fa7e4ea0bf73 \
     --hash=sha256:e828cce1123e9e44ae2a50a9de3055497ab1d0aeb440c5ac23064d9e44880da1
+triton==3.2.0; platform_system == "Linux" and platform_machine == "x86_64" \
+    --hash=sha256:8009a1fb093ee8546495e96731336a33fb8856a38e45bb4ab6affd6dbc3ba220
 typing-extensions==4.12.2 \
     --hash=sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d \
     --hash=sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8
