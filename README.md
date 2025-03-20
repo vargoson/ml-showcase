@@ -1,6 +1,6 @@
 # ML Showcase
 
-ML Showcase is an interactive web application built with Streamlit that demonstrates various machine learning projects I have taken part in. The base version of the app demonstrates real-time prediction using an enhanced DenseNet model trained on NIH Chest X-ray dataset, classifying X-ray images in real-time.
+ML Showcase is an interactive web application built with Streamlit that demonstrates various machine learning projects I have taken part in. The base version of the app demonstrates prediction using an enhanced DenseNet model trained on NIH Chest X-ray dataset, classifying X-ray images in real-time.
 
 As a learning data scientist, any feedback on this project/portfolio attempt would be much appreciated. I would like to note, that this is still a fairly early-stage project, and new iterations will happen. 
 
