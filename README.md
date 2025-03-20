@@ -4,7 +4,7 @@ ML Showcase is an interactive web application built with Streamlit that demonstr
 
 As a learning data scientist, any feedback on this project/portfolio attempt would be much appreciated. I would like to note, that this is still a fairly early-stage project, and new iterations will happen. 
 
-You can also view the app website [here]("https://ml-showcase-vargoson.streamlit.app/") - 🚧 still under construction. 🚧
+You can also view the app website [here](https://ml-showcase-vargoson.streamlit.app/) - 🚧 still under construction. 🚧
 
 ---
 
